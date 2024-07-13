@@ -1,0 +1,11 @@
+from collections import Counter
+def combine_dicts(d1, d2):
+    counter1 = Counter(d1)
+    counter2 = Counter(d2)
+    combined_counter = counter1 + counter2
+    return combined_counter
+if __name__ == "__main__":
+    d1 = {'a': 100, 'b': 200, 'c': 300}
+    d2 = {'a': 300, 'b': 200, 'd': 400}
+    combined_dict = combine_dicts(d1, d2)
+    print(combined_dict)
