@@ -1,0 +1,12 @@
+def read_file_char_by_char(filename):
+    try:
+        with open(filename, 'r') as file:
+            char = file.read(1)
+            while char != '':
+                print(char, end='')
+                char = file.read(1)
+    except FileNotFoundError:
+        print(f"Error: File '{filename}' not found.")
+if __name__ == "__main__":
+    filename = input("Enter the filename to read: ")
+    read_file_char_by_char(filename)
