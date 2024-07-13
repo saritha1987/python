@@ -1,0 +1,20 @@
+import math
+def find_lcm(numbers):
+    lcm = 1
+    for num in numbers:
+        lcm = lcm * num // math.gcd(lcm, num)
+    return lcm
+def find_gcd(numbers):
+    gcd = numbers[0]
+    for num in numbers[1:]:
+        gcd = math.gcd(gcd, num)
+    return gcd
+n = int(input("Enter the number of values: "))
+numbers = []
+for i in range(n):
+    num = int(input(f"Number {i+1}: "))
+    numbers.append(num)
+lcm_result = find_lcm(numbers)
+gcd_result = find_gcd(numbers)
+print(f"LCM = {lcm_result}")
+print(f"GCD = {gcd_result}")
