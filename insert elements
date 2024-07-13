@@ -1,0 +1,10 @@
+def insert_element(elements, element_to_insert, position):
+    elements.insert(position - 1, element_to_insert)
+    return element
+if __name__ == "__main__":
+    elements = input("Enter the elements separated by commas: ").strip().split(',')
+    elements = [int(e) for e in elements]
+    element_to_insert = int(input("Enter the element to be inserted: "))
+    position = int(input("Enter the position (1-based index) to insert the element: "))
+    modified_list = insert_element(elements, element_to_insert, position)
+    print(f"Modified list after insertion: {modified_list}")
