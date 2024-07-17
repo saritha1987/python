@@ -1,0 +1,22 @@
+def find_mth_max(arr, m):
+    sorted_arr = sorted(arr, reverse=True)
+    return sorted_arr[m - 1]
+def find_nth_min(arr, n):
+    sorted_arr = sorted(arr)
+    return sorted_arr[n - 1]
+def calculate_operations(max_num, min_num):
+    sum_result = max_num + min_num
+    difference_result = max_num - min_num
+    product_result = max_num * min_num
+    return sum_result, difference_result, product_result
+array = [85, 45, 65, 75, 95]
+M = 5
+N = 7
+mth_max = find_mth_max(array, M)
+nth_min = find_nth_min(array, N)
+sum_result, difference_result, product_result = calculate_operations(mth_max, nth_min)
+print(f"{M}st Maximum Number =", mth_max)
+print(f"{N}rd Minimum Number =", nth_min)
+print("Sum =", sum_result)
+print("Difference =", difference_result)
+print("Product =", product_result)
