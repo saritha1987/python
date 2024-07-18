@@ -1,0 +1,12 @@
+ef is_mirror_number(num_str):
+    reversed_num_str = num_str[::-1]
+    is_palindrome = num_str == reversed_num_str   
+    return reversed_num_str, is_palindrome
+number = input("Enter the number: ")
+mirror_image, is_palindrome = is_mirror_number(number)
+print(f"Mirror image: {mirror_image}")
+if is_palindrome:
+    print("The number is a palindrome.")
+else:
+    print("The number is not a palindrome.")
+
