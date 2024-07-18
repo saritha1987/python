@@ -1,0 +1,16 @@
+def remove_common_words(S1, S2):
+    words1 = S1.split()
+    words2 = S2.split()
+    set1 = set(words1)
+    set2 = set(words2)
+    common_words = set1.intersection(set2)
+    filtered_words1 = [word for word in words1 if word not in common_words]
+    filtered_words2 = [word for word in words2 if word not in common_words]
+    result1 = ' '.join(filtered_words1)
+    result2 = ' '.join(filtered_words2)
+    return result1, result2
+S1 = "sky is blue in color"
+S2 = "Raj likes sky blue color"
+result1, result2 = remove_common_words(S1, S2)
+print(result1)  
+print(result2) 
