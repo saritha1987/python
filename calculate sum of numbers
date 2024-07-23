@@ -1,0 +1,6 @@
+sum_total = 0
+number = 1
+while number <= 100:
+    sum_total += number
+    number += 1
+print("The sum of numbers from 1 to 100 is:", sum_total)
