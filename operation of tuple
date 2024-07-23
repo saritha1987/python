@@ -1,0 +1,14 @@
+tuple1 = (3, 5, 7, 2, 8)
+tuple2 = (1, 6, 4, 9, 0)
+max_value = max(tuple1)
+print(f"Maxima of tuple1: {max_value}")
+min_value = min(tuple1)
+print(f"Minima of tuple1: {min_value}")
+sum_tuples = tuple1 + tuple2
+print(f"Sum of tuple1 and tuple2: {sum_tuples}")
+duplicate_tuple = tuple1 * 2
+print(f"Duplicate of tuple1: {duplicate_tuple}")
+slice_tuple = tuple1[1:4]  
+print(f"Slicing of tuple1 from index 1 to 4: {slice_tuple}")
+list_from_tuple = list(tuple1)
+print(f"List obtained from tuple1: {list_from_tuple}")
