@@ -1,0 +1,14 @@
+def binary_to_int(binary_str):
+    return int(binary_str, 2)
+def find_maximum_binary(bin_list):
+    max_bin = bin_list[0]
+    max_int = binary_to_int(max_bin)   
+    for bin_val in bin_list:
+        bin_int = binary_to_int(bin_val)
+        if bin_int > max_int:
+            max_bin = bin_val
+            max_int = bin_int   
+    return max_bin
+bin_list = ["1101", "1011", "1001"]
+max_bin = find_maximum_binary(bin_list)
+print(f"Maximum Number: {max_bin}")
