@@ -1,0 +1,31 @@
+month =  input ("Enter the name of the  month:")
+day   =  int (input ("Enter the day number:"))
+if  month == "January" or month == "February":
+   season   =  "Winter"
+elif   month == "March":
+   if  day  <  20:
+     season = "Winter"
+   else :
+     season = "summer"
+elif   month == "April" or month == "May":
+   season   =  "summer"
+elif   month == "June":
+   if  day  <  21:
+     season = "Summer"
+   else :
+     season = "Spring"
+elif   month == "July" or month == "August":
+   season   =  "Spring"
+elif   month == "September":
+   if  day  <  22:
+     season = "Spring"
+   else :
+     season = "Fall"
+elif   month == "October"  or month == "November":
+   season   =  "Fall"
+elif   month == "December":
+   if  day  <  21:
+     season = "Fall"
+   else :
+     season = "Winter"
+print (month,     day,  "is   in",  season)
