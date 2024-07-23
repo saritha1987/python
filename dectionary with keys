@@ -1,0 +1,7 @@
+fruit_counts = {
+    "Apple": 5,
+    "Orange": 10,
+    "Banana": 12
+}
+for fruit, count in fruit_counts.items():
+    print(f"{fruit} : {count}")
