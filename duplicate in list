@@ -1,0 +1,4 @@
+from collections import Counter
+my_list = [10, 12, 14, 10, 16, 14, 18]
+duplicates = [item for item, count in Counter(my_list).items() if count > 1]
+print(duplicates)
