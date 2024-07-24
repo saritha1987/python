@@ -1,0 +1,10 @@
+str1 = "Hello"
+str2 = "World"
+concatenated = str1 + " " + str2
+print("Concatenation:", concatenated)
+reversed_str = concatenated[::-1]
+print("Reversed:", reversed_str)
+sliced_str = concatenated[1:8]
+print("Sliced (1:8):", sliced_str)
+length = len(concatenated)
+print("Length:", length)
