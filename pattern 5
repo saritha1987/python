@@ -1,0 +1,8 @@
+def print_pattern():
+    values = [10, 5, 20]
+    rows = [1, 2, 3]
+    for i in range(len(rows)):
+        for j in range(rows[i]):
+            print(values[i], end=' ')
+        print()
+print_pattern()
