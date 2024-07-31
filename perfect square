@@ -1,0 +1,7 @@
+def sum_of_digits(n):
+    return sum(int(digit) for digit in str(n))
+lower = int(input("Enter lower range: "))
+upper = int(input("Enter upper range: "))
+perfect_squares = [i*i for i in range(1, int(upper**0.5) + 1)
+                   if lower <= i*i <= upper and sum_of_digits(i*i) < 10]
+print(perfect_squares)
